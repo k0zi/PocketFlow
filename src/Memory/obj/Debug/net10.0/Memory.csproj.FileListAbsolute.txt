@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/bin/Debug/net10.0/Memory
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/bin/Debug/net10.0/Memory.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/bin/Debug/net10.0/Memory.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/bin/Debug/net10.0/Memory.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/bin/Debug/net10.0/Memory.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/refint/Memory.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/Memory.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Memory/obj/Debug/net10.0/ref/Memory.dll

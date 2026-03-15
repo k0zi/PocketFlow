@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/bin/Debug/net10.0/Workflow
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/bin/Debug/net10.0/Workflow.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/bin/Debug/net10.0/Workflow.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/bin/Debug/net10.0/Workflow.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/bin/Debug/net10.0/Workflow.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/refint/Workflow.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/Workflow.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/obj/Debug/net10.0/ref/Workflow.dll

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\ecommerce.db">
+        <Link>ecommerce.db</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\flow.py">
+        <Link>flow.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\main.py">
+        <Link>main.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\nodes.py">
+        <Link>nodes.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\populate_db.py">
+        <Link>populate_db.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\README.md">
+        <Link>README.md</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-text2sql\utils\call_llm.py">
+        <Link>call_llm.py</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>

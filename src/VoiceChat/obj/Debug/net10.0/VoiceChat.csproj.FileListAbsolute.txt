@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/bin/Debug/net10.0/VoiceChat
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/bin/Debug/net10.0/VoiceChat.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/bin/Debug/net10.0/VoiceChat.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/bin/Debug/net10.0/VoiceChat.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/bin/Debug/net10.0/VoiceChat.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/refint/VoiceChat.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/VoiceChat.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/VoiceChat/obj/Debug/net10.0/ref/VoiceChat.dll

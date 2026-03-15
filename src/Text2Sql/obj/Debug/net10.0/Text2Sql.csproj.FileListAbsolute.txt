@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/bin/Debug/net10.0/Text2Sql
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/bin/Debug/net10.0/Text2Sql.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/bin/Debug/net10.0/Text2Sql.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/bin/Debug/net10.0/Text2Sql.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/bin/Debug/net10.0/Text2Sql.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/refint/Text2Sql.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/Text2Sql.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/obj/Debug/net10.0/ref/Text2Sql.dll

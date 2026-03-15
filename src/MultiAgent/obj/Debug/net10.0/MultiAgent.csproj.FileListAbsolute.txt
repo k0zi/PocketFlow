@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/bin/Debug/net10.0/MultiAgent
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/bin/Debug/net10.0/MultiAgent.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/bin/Debug/net10.0/MultiAgent.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/bin/Debug/net10.0/MultiAgent.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/bin/Debug/net10.0/MultiAgent.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/refint/MultiAgent.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/MultiAgent.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/MultiAgent/obj/Debug/net10.0/ref/MultiAgent.dll

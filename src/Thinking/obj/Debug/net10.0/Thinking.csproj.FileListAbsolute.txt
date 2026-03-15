@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Thinking
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Thinking.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Thinking.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Thinking.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Thinking.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/refint/Thinking.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/ref/Thinking.dll

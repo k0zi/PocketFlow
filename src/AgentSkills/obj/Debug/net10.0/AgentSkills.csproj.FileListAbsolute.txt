@@ -1,0 +1,15 @@
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/AgentSkills
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/AgentSkills.deps.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/AgentSkills.runtimeconfig.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/AgentSkills.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/AgentSkills.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.GeneratedMSBuildEditorConfig.editorconfig
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.AssemblyInfoInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.AssemblyInfo.cs
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.csproj.CoreCompileInputs.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.sourcelink.json
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/refint/AgentSkills.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.genruntimeconfig.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/ref/AgentSkills.dll
