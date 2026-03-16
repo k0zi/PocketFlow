@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SApijM0DtyQ=",
+  "dgSpecHash": "dljnxsqVzFE=",
   "success": true,
   "projectFilePath": "/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/AgentSkills.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/k0zi/.nuget/packages/microsoft.extensions.ai.abstractions/10.3.0/microsoft.extensions.ai.abstractions.10.3.0.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/ollamasharp/5.4.23/ollamasharp.5.4.23.nupkg.sha512"
+  ],
   "logs": []
 }

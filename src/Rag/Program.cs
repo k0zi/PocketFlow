@@ -71,14 +71,14 @@ foreach (var arg in args)
 var chunkDocs   = new ChunkDocumentsNode();
 var embedDocs   = new EmbedDocumentsNode();
 var createIndex = new CreateIndexNode();
-_ = chunkDocs >> embedDocs >> createIndex;
+chunkDocs.Then(embedDocs).Then(createIndex);
 var offlineFlow = new Flow(start: chunkDocs);
 
 // Online: embedQuery → retrieve → generateAnswer
 var embedQuery     = new EmbedQueryNode();
 var retrieveDoc    = new RetrieveDocumentNode();
 var generateAnswer = new GenerateAnswerNode();
-_ = embedQuery >> retrieveDoc >> generateAnswer;
+embedQuery.Then(retrieveDoc).Then(generateAnswer);
 var onlineFlow = new Flow(start: embedQuery);
 
 // ── Run ───────────────────────────────────────────────────────────────────────

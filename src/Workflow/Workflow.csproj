@@ -5,6 +5,16 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>Workflow</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\PocketFlow\PocketFlow.csproj" />
+        <ProjectReference Include="..\SharedUtils\SharedUtils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="YamlDotNet" Version="16.3.0" />
+    </ItemGroup>
 
 </Project>

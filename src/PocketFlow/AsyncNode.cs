@@ -44,5 +44,5 @@ public class AsyncNode : Node
         return await PostAsync(shared, p, e);
     }
 
-    internal override object? _Run(object shared) => throw new InvalidOperationException("Use RunAsync.");
+    internal override object? InternalRun(object shared) => throw new InvalidOperationException("Use RunAsync.");
 }

@@ -14,13 +14,13 @@ public class Node : BaseNode
 
     protected virtual object? ExecFallback(object? prepRes, Exception exc) => throw exc;
 
-    internal override object? _Exec(object? prepRes)
+    internal override object? InternalExecute(object? prepRes)
     {
         for (CurRetry = 0; CurRetry < MaxRetries; CurRetry++)
         {
             try
             {
-                return Exec(prepRes);
+                return Execute(prepRes);
             }
             catch (Exception e)
             {

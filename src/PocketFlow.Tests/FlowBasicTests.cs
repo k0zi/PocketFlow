@@ -10,7 +10,7 @@ public class FlowBasicTests
     {
         private readonly int _number;
         public NumberNode(int number) : base() => _number = number;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, int>)shared;
             sharedStorage["current"] = _number;
@@ -22,7 +22,7 @@ public class FlowBasicTests
     {
         private readonly int _number;
         public AddNode(int number) : base() => _number = number;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, int>)shared;
             sharedStorage["current"] += _number;
@@ -34,7 +34,7 @@ public class FlowBasicTests
     {
         private readonly int _number;
         public MultiplyNode(int number) : base() => _number = number;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, int>)shared;
             sharedStorage["current"] *= _number;
@@ -91,7 +91,9 @@ public class FlowBasicTests
         var n2 = new AddNode(3);
         var n3 = new MultiplyNode(2);
         var pipeline = new Flow();
-        _ = pipeline.Start(n1) >> n2 >> n3;
+        pipeline.Start(n1)
+            .Then(n2)
+            .Then(n3);
         var lastAction = pipeline.Run(sharedStorage);
         Assert.Equal(16, sharedStorage["current"]);
         Assert.Null(lastAction);
@@ -106,9 +108,9 @@ public class FlowBasicTests
         var addIfPositive = new AddNode(10);
         var addIfNegative = new AddNode(-20);
         var pipeline = new Flow();
-        _ = pipeline.Start(startNode) >> checkNode;
-        _ = checkNode - "positive" >> addIfPositive;
-        _ = checkNode - "negative" >> addIfNegative;
+        pipeline.Start(startNode).Then(checkNode);
+        checkNode.On("positive").Then(addIfPositive);
+        checkNode.On("negative").Then(addIfNegative);
         var lastAction = pipeline.Run(sharedStorage);
         Assert.Equal(15, sharedStorage["current"]);
         Assert.Null(lastAction);
@@ -123,9 +125,9 @@ public class FlowBasicTests
         var addIfPositive = new AddNode(10);
         var addIfNegative = new AddNode(-20);
         var pipeline = new Flow();
-        _ = pipeline.Start(startNode) >> checkNode;
-        _ = checkNode - "positive" >> addIfPositive;
-        _ = checkNode - "negative" >> addIfNegative;
+        pipeline.Start(startNode).Then(checkNode);
+        checkNode.On("positive").Then(addIfPositive);
+        checkNode.On("negative").Then(addIfNegative);
         var lastAction = pipeline.Run(sharedStorage);
         Assert.Equal(-25, sharedStorage["current"]);
         Assert.Null(lastAction);
@@ -140,10 +142,10 @@ public class FlowBasicTests
         var subtract3 = new AddNode(-3);
         var endNode = new EndSignalNode("cycle_done");
         var pipeline = new Flow();
-        _ = pipeline.Start(n1) >> check;
-        _ = check - "positive" >> subtract3;
-        _ = check - "negative" >> endNode;
-        _ = subtract3 >> check;
+        pipeline.Start(n1).Then(check);
+        check.On("positive").Then(subtract3);
+        check.On("negative").Then(endNode);
+        subtract3.Then(check);
         var lastAction = pipeline.Run(sharedStorage);
         Assert.Equal(-2, sharedStorage["current"]);
         Assert.Equal("cycle_done", lastAction);

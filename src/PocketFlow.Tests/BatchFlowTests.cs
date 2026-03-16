@@ -8,7 +8,7 @@ public class BatchFlowTests
 {
     private class AddNode : Node
     {
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, int>)shared;
             sharedStorage["sum"] += (int)Params["value"];
@@ -18,7 +18,7 @@ public class BatchFlowTests
 
     private class MyBatchFlow : BatchFlow
     {
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             return new List<Dictionary<string, object>>
             {

@@ -10,7 +10,7 @@ namespace Agent;
 
 public class DecideActionNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         var context  = store.TryGetValue("context", out var c) ? (string)c : "No previous search";
@@ -18,7 +18,7 @@ public class DecideActionNode : Node
         return (question, context);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (question, context) = ((string, string))prepRes!;
 
@@ -159,13 +159,13 @@ IMPORTANT: Make sure to:
 
 public class SearchWebNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (string)store["search_query"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var query = (string)prepRes!;
         Console.WriteLine($"🌐 Searching the web for: {query}");
@@ -190,7 +190,7 @@ public class SearchWebNode : Node
 
 public class AnswerQuestionNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store   = (Dictionary<string, object>)shared;
         var question = (string)store["question"];
@@ -198,7 +198,7 @@ public class AnswerQuestionNode : Node
         return (question, context);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (question, context) = ((string, string))prepRes!;
 

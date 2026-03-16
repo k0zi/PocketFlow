@@ -4,9 +4,9 @@ public class BatchFlow : Flow
 {
     public BatchFlow(BaseNode? start = null) : base(start) { }
 
-    internal override object? _Run(object shared)
+    internal override object? InternalRun(object shared)
     {
-        var pr = Prep(shared) as IEnumerable<Dictionary<string, object>> ?? Array.Empty<Dictionary<string, object>>();
+        var pr = Prepare(shared) as IEnumerable<Dictionary<string, object>> ?? Array.Empty<Dictionary<string, object>>();
         foreach (var bp in pr)
         {
             var p = new Dictionary<string, object>(Params);

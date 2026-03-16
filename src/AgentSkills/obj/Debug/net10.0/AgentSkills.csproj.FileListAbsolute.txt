@@ -13,3 +13,13 @@
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.pdb
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.genruntimeconfig.cache
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/ref/AgentSkills.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSkills.csproj.AssemblyReference.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/skills/checklist_writer.md
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/skills/executive_brief.md
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/Microsoft.Extensions.AI.Abstractions.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/OllamaSharp.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/PocketFlow.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/SharedUtils.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/PocketFlow.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/bin/Debug/net10.0/SharedUtils.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/AgentSkills/obj/Debug/net10.0/AgentSki.38140379.Up2Date

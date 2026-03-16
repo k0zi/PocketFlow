@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OPgIAuzAJpk=",
+  "dgSpecHash": "v4iP+v7CdbQ=",
   "success": true,
   "projectFilePath": "/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Workflow/Workflow.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/k0zi/.nuget/packages/microsoft.extensions.ai.abstractions/10.3.0/microsoft.extensions.ai.abstractions.10.3.0.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/ollamasharp/5.4.23/ollamasharp.5.4.23.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

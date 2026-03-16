@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\PocketFlow\PocketFlow.csproj" />
+        <ProjectReference Include="..\SharedUtils\SharedUtils.csproj" />
+    </ItemGroup>
+
 </Project>

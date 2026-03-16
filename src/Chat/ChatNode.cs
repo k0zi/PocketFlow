@@ -3,7 +3,7 @@ using PocketFlow;
 
 class ChatNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
 
@@ -29,7 +29,7 @@ class ChatNode : Node
         return messages;
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         if (prepRes is null) return null;
 

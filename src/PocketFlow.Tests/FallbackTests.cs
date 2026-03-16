@@ -13,7 +13,7 @@ public class FallbackTests
         private readonly bool _shouldFail;
         public FallbackNode(bool shouldFail = true, int maxRetries = 1) : base(maxRetries) => _shouldFail = shouldFail;
 
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             var result = new Dictionary<string, object> { ["attempts"] = 0 };
@@ -22,7 +22,7 @@ public class FallbackTests
             return result;
         }
 
-        protected override object? Exec(object? prepRes)
+        protected override object? Execute(object? prepRes)
         {
             var res = (Dictionary<string, object>)prepRes!;
             res["attempts"] = (int)res["attempts"] + 1;
@@ -94,7 +94,7 @@ public class FallbackTests
     {
         private readonly int _failUntil;
         public DynamicFallbackNode(int failUntil, int maxRetries) : base(true, maxRetries) => _failUntil = failUntil;
-        protected override object? Exec(object? prepRes)
+        protected override object? Execute(object? prepRes)
         {
             var res = (Dictionary<string, object>)prepRes!;
             res["attempts"] = (int)res["attempts"] + 1;

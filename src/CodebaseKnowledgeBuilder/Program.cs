@@ -110,11 +110,11 @@ var orderChapters         = new OrderChapters(maxRetries: 5, wait: 20);
 var writeChapters         = new WriteChapters(maxRetries: 5, wait: 20);
 var combineTutorial       = new CombineTutorial();
 
-_ = fetchRepo >> identifyAbstractions;
-_ = identifyAbstractions >> analyzeRelationships;
-_ = analyzeRelationships >> orderChapters;
-_ = orderChapters >> writeChapters;
-_ = writeChapters >> combineTutorial;
+fetchRepo.Then(identifyAbstractions)
+    .Then(analyzeRelationships)
+    .Then(orderChapters)
+    .Then(writeChapters)
+    .Then(combineTutorial);
 
 var flow = new Flow(start: fetchRepo);
 flow.Run(shared);

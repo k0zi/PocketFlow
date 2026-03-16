@@ -75,13 +75,13 @@ internal static class YamlHelper
 
 public class GenerateTestCasesNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (string)store["problem"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var problem = (string)prepRes!;
         Console.WriteLine("🧪 Generating test cases...");
@@ -161,13 +161,13 @@ test_cases:
 
 public class ImplementFunctionNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return ((string)store["problem"], (List<object>)store["test_cases"]);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (problem, testCases) = ((string, List<object>))prepRes!;
         Console.WriteLine("⚙️  Implementing C# solution...");
@@ -247,7 +247,7 @@ function_code: |
 public class RunTestsNode : BatchNode
 {
     // Prep returns a list; BatchNode calls Exec once per element.
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store        = (Dictionary<string, object>)shared;
         var functionCode = (string)store["function_code"];
@@ -259,7 +259,7 @@ public class RunTestsNode : BatchNode
     }
 
     // Exec receives one (functionCode, testCase) tuple at a time.
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (functionCode, testCase) = ((string, Dictionary<object, object>))prepRes!;
         var input    = (Dictionary<object, object>)testCase["input"];
@@ -343,7 +343,7 @@ public class RunTestsNode : BatchNode
 
 public class ReviseNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store       = (Dictionary<string, object>)shared;
         var testResults = (List<Dictionary<string, object?>>)store["test_results"];
@@ -358,7 +358,7 @@ public class ReviseNode : Node
         };
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var inputs      = (Dictionary<string, object>)prepRes!;
         var testCases   = (List<object>)inputs["test_cases"];

@@ -15,16 +15,16 @@ public class BaseNode : ICloneable
         return node;
     }
 
-    protected virtual object? Prep(object shared) => null;
-    protected virtual object? Exec(object? prepRes) => null;
+    protected virtual object? Prepare(object shared) => null;
+    protected virtual object? Execute(object? prepRes) => null;
     protected virtual object? Post(object shared, object? prepRes, object? execRes) => execRes;
 
-    internal virtual object? _Exec(object? prepRes) => Exec(prepRes);
+    internal virtual object? InternalExecute(object? prepRes) => Execute(prepRes);
 
-    internal virtual object? _Run(object shared)
+    internal virtual object? InternalRun(object shared)
     {
-        var p = Prep(shared);
-        var e = _Exec(p);
+        var p = Prepare(shared);
+        var e = InternalExecute(p);
         return Post(shared, p, e);
     }
 
@@ -32,11 +32,15 @@ public class BaseNode : ICloneable
     {
         if (Successors.Count > 0)
             Console.WriteLine("Warning: Node won't run successors. Use Flow.");
-        return _Run(shared);
+        return InternalRun(shared);
     }
+    
+    public BaseNode Then(BaseNode node) 
+        => Next(node);
 
-    public static BaseNode operator >> (BaseNode src, BaseNode tgt) => src.Next(tgt);
-    public static ConditionalTransition operator - (BaseNode src, string action) => new(src, action);
+    public ConditionalTransition On(string action) 
+        => new(this, action);
 
-    public virtual object Clone() => MemberwiseClone();
+    public virtual object Clone() 
+        => MemberwiseClone();
 }

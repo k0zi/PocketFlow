@@ -8,10 +8,10 @@ var implement     = new ImplementFunctionNode();
 var runTests      = new RunTestsNode();
 var revise        = new ReviseNode();
 
-_ = generateTests >> implement;        // always proceed to implement
-_ = implement     >> runTests;         // always proceed to run tests
-_ = (runTests - "failure") >> revise;  // on failure: revise
-_ = revise        >> runTests;         // after revision: re-run tests
+_ = generateTests.Then(implement);        // always proceed to implement
+_ = implement.Then(runTests);         // always proceed to run tests
+_ = runTests.On("failure").Then(revise);  // on failure: revise
+_ = revise.Then(runTests);         // after revision: re-run tests
 // "success" and "max_iterations" have no successor → flow ends
 
 var flow = new Flow(start: generateTests);

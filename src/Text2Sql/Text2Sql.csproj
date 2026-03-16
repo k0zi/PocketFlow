@@ -8,27 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\ecommerce.db">
-        <Link>ecommerce.db</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\flow.py">
-        <Link>flow.py</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\main.py">
-        <Link>main.py</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\nodes.py">
-        <Link>nodes.py</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\populate_db.py">
-        <Link>populate_db.py</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\README.md">
-        <Link>README.md</Link>
-      </Content>
-      <Content Include="..\..\cookbook\pocketflow-text2sql\utils\call_llm.py">
-        <Link>call_llm.py</Link>
-      </Content>
+        <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\PocketFlow\PocketFlow.csproj" />
+        <ProjectReference Include="..\SharedUtils\SharedUtils.csproj" />
     </ItemGroup>
 
 </Project>

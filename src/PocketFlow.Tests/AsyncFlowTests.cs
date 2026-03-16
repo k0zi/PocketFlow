@@ -36,7 +36,7 @@ public class AsyncFlowTests
     {
         var shared = new Dictionary<string, int> { ["current"] = 0 };
         var flow = new AsyncFlow();
-        _ = flow.Start(new AsyncNumberNode(5)) >> new AsyncAddNode(10);
+        flow.Start(new AsyncNumberNode(5)).Then(new AsyncAddNode(10));
         await flow.RunAsync(shared);
         Assert.Equal(15, shared["current"]);
     }

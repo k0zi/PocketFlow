@@ -11,5 +11,5 @@ public class ConditionalTransition
         Action = action;
     }
 
-    public static BaseNode operator >> (ConditionalTransition trans, BaseNode tgt) => trans.Src.Next(tgt, trans.Action);
+    public BaseNode Then(BaseNode tgt) => Src.Next(tgt, Action);
 }

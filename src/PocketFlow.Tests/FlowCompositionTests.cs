@@ -10,7 +10,7 @@ public class FlowCompositionTests
     {
         private readonly int _value;
         public AddNode(int value) : base() => _value = value;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             sharedStorage["current"] = (int)sharedStorage["current"] + _value;
@@ -22,7 +22,7 @@ public class FlowCompositionTests
     {
         private readonly int _value;
         public MultiplyNode(int value) : base() => _value = value;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             sharedStorage["current"] = (int)sharedStorage["current"] * _value;
@@ -46,7 +46,7 @@ public class FlowCompositionTests
     {
         private readonly string _path;
         public PathNode(string path) : base() => _path = path;
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             sharedStorage["path_taken"] = _path;
@@ -60,15 +60,15 @@ public class FlowCompositionTests
         var sharedStorage = new Dictionary<string, object> { ["current"] = 10 };
         
         var innerFlow = new Flow();
-        _ = innerFlow.Start(new AddNode(5)) >> new MultiplyNode(2) >> new SignalNode("inner_done");
+        innerFlow.Start(new AddNode(5)).Then(new MultiplyNode(2)).Then(new SignalNode("inner_done"));
         
         var outerFlow = new Flow();
         var pathANode = new PathNode("A");
         var pathBNode = new PathNode("B");
         
         outerFlow.Start(innerFlow);
-        _ = innerFlow - "inner_done" >> pathBNode;
-        _ = innerFlow - "default" >> pathANode;
+        innerFlow.On("inner_done").Then(pathBNode);
+        innerFlow.On("default").Then(pathANode);
         
         var lastActionOuter = outerFlow.Run(sharedStorage);
         

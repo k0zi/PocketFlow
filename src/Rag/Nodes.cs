@@ -11,13 +11,13 @@ namespace Rag;
 /// </summary>
 public class ChunkDocumentsNode : BatchNode
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (IEnumerable<string>)store["texts"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var text = (string)prepRes!;
         return Utils.FixedSizeChunk(text);
@@ -46,13 +46,13 @@ public class ChunkDocumentsNode : BatchNode
 /// </summary>
 public class EmbedDocumentsNode : BatchNode
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (IEnumerable<string>)store["texts"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var text = (string)prepRes!;
         return Utils.GetEmbedding(text);
@@ -80,13 +80,13 @@ public class EmbedDocumentsNode : BatchNode
 /// </summary>
 public class CreateIndexNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (List<float[]>)store["embeddings"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         Console.WriteLine("🔍 Creating search index...");
         // Pure C# in-memory index: the embedding list IS the index.
@@ -111,13 +111,13 @@ public class CreateIndexNode : Node
 /// </summary>
 public class EmbedQueryNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (string)store["query"];
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var query = (string)prepRes!;
         Console.WriteLine($"🔍 Embedding query: {query}");
@@ -139,7 +139,7 @@ public class EmbedQueryNode : Node
 /// </summary>
 public class RetrieveDocumentNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (
@@ -149,7 +149,7 @@ public class RetrieveDocumentNode : Node
         );
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         Console.WriteLine("🔎 Searching for relevant documents...");
         var (queryEmbedding, index, texts) =
@@ -211,7 +211,7 @@ public class RetrieveDocumentNode : Node
 /// </summary>
 public class GenerateAnswerNode : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         return (
@@ -220,7 +220,7 @@ public class GenerateAnswerNode : Node
         );
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (query, retrievedDoc) = ((string, Dictionary<string, object>))prepRes!;
         var contextText = (string)retrievedDoc["text"];

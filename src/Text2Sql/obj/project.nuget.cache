@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "qJ8E9VT4E+0=",
+  "dgSpecHash": "IZR+JFRxOfs=",
   "success": true,
   "projectFilePath": "/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Text2Sql/Text2Sql.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/k0zi/.nuget/packages/microsoft.data.sqlite/9.0.4/microsoft.data.sqlite.9.0.4.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/microsoft.data.sqlite.core/9.0.4/microsoft.data.sqlite.core.9.0.4.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/microsoft.extensions.ai.abstractions/10.3.0/microsoft.extensions.ai.abstractions.10.3.0.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/ollamasharp/5.4.23/ollamasharp.5.4.23.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/k0zi/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

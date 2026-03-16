@@ -38,16 +38,16 @@ public class Flow : BaseNode
         while (curr != null)
         {
             curr.SetParams(p);
-            lastAction = curr._Run(shared)?.ToString();
+            lastAction = curr.InternalRun(shared)?.ToString();
             var next = GetNextNode(curr, lastAction);
             curr = next != null ? (BaseNode)next.Clone() : null;
         }
         return lastAction;
     }
 
-    internal override object? _Run(object shared)
+    internal override object? InternalRun(object shared)
     {
-        var p = Prep(shared);
+        var p = Prepare(shared);
         var o = _Orch(shared);
         return Post(shared, p, o);
     }

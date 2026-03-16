@@ -36,7 +36,7 @@ public class AsyncFlow : AsyncNode
             if (curr is AsyncNode asyncNode)
                 lastAction = (await asyncNode._RunAsync(shared))?.ToString();
             else
-                lastAction = curr._Run(shared)?.ToString();
+                lastAction = curr.InternalRun(shared)?.ToString();
             
             var next = GetNextNode(curr, lastAction);
             curr = next != null ? (BaseNode)next.Clone() : null;

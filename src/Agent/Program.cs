@@ -7,9 +7,9 @@ var decide = new DecideActionNode();
 var search = new SearchWebNode();
 var answer = new AnswerQuestionNode();
 
-_ = (decide - "search") >> search;   // search branch
-_ = (decide - "answer") >> answer;   // answer branch
-_ = (search - "decide") >> decide;   // loop back after each search
+decide.On("search").Then(search);   // search branch
+decide.On("answer").Then(answer);   // answer branch
+search.On("decide").Then(decide);   // loop back after each search
 
 var flow = new Flow(start: decide);
 

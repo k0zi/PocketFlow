@@ -12,7 +12,7 @@ public class BatchNodeTests
         private readonly int _chunkSize;
         public ArrayChunkNode(int chunkSize = 10) : base() => _chunkSize = chunkSize;
 
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             var array = (List<int>)sharedStorage.GetValueOrDefault("input_array", new List<int>());
@@ -25,7 +25,7 @@ public class BatchNodeTests
             return chunks;
         }
 
-        protected override object? Exec(object? chunk)
+        protected override object? Execute(object? chunk)
         {
             var list = (List<int>)chunk!;
             return list.Sum();
@@ -41,7 +41,7 @@ public class BatchNodeTests
 
     private class SumReduceNode : Node
     {
-        protected override object? Prep(object shared)
+        protected override object? Prepare(object shared)
         {
             var sharedStorage = (Dictionary<string, object>)shared;
             var chunkResults = (List<object?>)sharedStorage.GetValueOrDefault("chunk_results", new List<object?>());
@@ -79,7 +79,7 @@ public class BatchNodeTests
         var chunkNode = new ArrayChunkNode(chunkSize: 10);
         var reduceNode = new SumReduceNode();
 
-        _ = chunkNode >> reduceNode;
+        chunkNode.Then(reduceNode);
 
         var pipeline = new Flow(start: chunkNode);
         pipeline.Run(sharedStorage);

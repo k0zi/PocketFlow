@@ -7,4 +7,34 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\flow.py">
+        <Link>flow.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\main.py">
+        <Link>main.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\nodes.py">
+        <Link>nodes.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\README.md">
+        <Link>README.md</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\utils\audio_utils.py">
+        <Link>audio_utils.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\utils\call_llm.py">
+        <Link>call_llm.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\utils\speech_to_text.py">
+        <Link>speech_to_text.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\utils\text_to_speech.py">
+        <Link>text_to_speech.py</Link>
+      </Content>
+      <Content Include="..\..\cookbook\pocketflow-voice-chat\utils\tts_output.mp3">
+        <Link>tts_output.mp3</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>

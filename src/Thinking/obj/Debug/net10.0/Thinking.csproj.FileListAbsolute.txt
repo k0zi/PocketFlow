@@ -13,3 +13,12 @@
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.pdb
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.genruntimeconfig.cache
 /home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/ref/Thinking.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.csproj.AssemblyReference.cache
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/Microsoft.Extensions.AI.Abstractions.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/OllamaSharp.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/YamlDotNet.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/PocketFlow.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/SharedUtils.dll
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/PocketFlow.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/bin/Debug/net10.0/SharedUtils.pdb
+/home/k0zi/Develop/Sources/GitHub/PocketFlow/src/Thinking/obj/Debug/net10.0/Thinking.csproj.Up2Date

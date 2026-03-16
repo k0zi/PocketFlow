@@ -76,7 +76,7 @@ file static class FileHelper
 
 public class FetchRepo : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store = (Dictionary<string, object>)shared;
         var repoUrl    = SharedStore.Get<string?>(store, "repo_url", null);
@@ -102,7 +102,7 @@ public class FetchRepo : Node
         };
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var p = (Dictionary<string, object?>)prepRes!;
         var repoUrl   = p["repo_url"] as string;
@@ -148,7 +148,7 @@ public class IdentifyAbstractions : Node
 {
     public IdentifyAbstractions(int maxRetries = 1, int wait = 0) : base(maxRetries, wait) { }
 
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store        = (Dictionary<string, object>)shared;
         var files        = (List<(string path, string content)>)store["files"];
@@ -173,7 +173,7 @@ public class IdentifyAbstractions : Node
         return (context.ToString(), listing, files.Count, projectName, language, useCache, maxAbstrNum);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (context, listing, fileCount, projectName, language, useCache, maxAbstrNum) =
             ((string, string, int, string, string, bool, int))prepRes!;
@@ -286,7 +286,7 @@ public class AnalyzeRelationships : Node
 {
     public AnalyzeRelationships(int maxRetries = 1, int wait = 0) : base(maxRetries, wait) { }
 
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store       = (Dictionary<string, object>)shared;
         var abstractions = (List<Dictionary<string, object>>)store["abstractions"];
@@ -320,7 +320,7 @@ public class AnalyzeRelationships : Node
                 abstractions.Count, projectName, language, useCache);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (context, listing, numAbstr, projectName, language, useCache) =
             ((string, string, int, string, string, bool))prepRes!;
@@ -420,7 +420,7 @@ public class OrderChapters : Node
 {
     public OrderChapters(int maxRetries = 1, int wait = 0) : base(maxRetries, wait) { }
 
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store        = (Dictionary<string, object>)shared;
         var abstractions = (List<Dictionary<string, object>>)store["abstractions"];
@@ -449,7 +449,7 @@ public class OrderChapters : Node
         return (listing, ctx.ToString(), abstractions.Count, projectName, listNote, useCache);
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var (listing, context, numAbstr, projectName, listNote, useCache) =
             ((string, string, int, string, string, bool))prepRes!;
@@ -523,7 +523,7 @@ public class WriteChapters : BatchNode
     // Progressive context across batch items (cleared in Post)
     private List<string> _chaptersWrittenSoFar = new();
 
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store        = (Dictionary<string, object>)shared;
         var chapterOrder = (List<int>)store["chapter_order"];
@@ -589,7 +589,7 @@ public class WriteChapters : BatchNode
         return items;
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var item        = (Dictionary<string, object>)prepRes!;
         var abstr       = (Dictionary<string, object>)item["abstraction_details"];
@@ -704,7 +704,7 @@ Now, directly provide a super beginner-friendly Markdown output (DON'T need ```m
 
 public class CombineTutorial : Node
 {
-    protected override object? Prep(object shared)
+    protected override object? Prepare(object shared)
     {
         var store          = (Dictionary<string, object>)shared;
         var projectName    = (string)store["project_name"];
@@ -784,7 +784,7 @@ public class CombineTutorial : Node
         };
     }
 
-    protected override object? Exec(object? prepRes)
+    protected override object? Execute(object? prepRes)
     {
         var p            = (Dictionary<string, object>)prepRes!;
         var outputPath   = p["output_path"].ToString()!;
